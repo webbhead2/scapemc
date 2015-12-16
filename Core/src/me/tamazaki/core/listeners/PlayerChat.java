@@ -11,7 +11,7 @@ public class PlayerChat implements Listener {
 	public void onChat(AsyncPlayerChatEvent event) {
 		Player player = event.getPlayer();
 		
-		event.setFormat("§8[§7Player§8] §e" + player.getName() + " §8> §f" + event.getMessage());
+		event.setFormat("§7" + player.getName() + " §8> §f" + event.getMessage());
 	}
 
 }
