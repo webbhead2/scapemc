@@ -2,7 +2,7 @@ package me.tamazaki.core;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Core extends JavaPlugin {
+public class Main extends JavaPlugin {
 	
 	@Override
 	public void onEnable() {

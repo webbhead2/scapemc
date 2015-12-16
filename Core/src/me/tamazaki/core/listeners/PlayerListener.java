@@ -22,5 +22,8 @@ public class PlayerListener implements Listener {
 				}
 			}
 		}
+		
+		event.setJoinMessage("§7" + player.getName() + " has joined.");
+		
 	}
 }
