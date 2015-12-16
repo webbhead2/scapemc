@@ -2,3 +2,4 @@ name: ScapeSuit
 version: 0.0.1
 main: me.tamazaki.core.Main
 description: ScapeMC Core Plugin.
+depend: [PermissionsEx]

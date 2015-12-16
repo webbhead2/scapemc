@@ -14,16 +14,25 @@ public class PlayerListener implements Listener {
 	public void onJoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
 		
-		if(player.hasPermission("essentials.join.silent")) {
-			event.setJoinMessage(null);
-			for(Player online : Bukkit.getServer().getOnlinePlayers()) {
-				if(online.hasPermission("essentials.staff")) {
-					online.sendMessage(Prefixes.STAFF + player.getName() + " has joined silently.");
-				}
-			}
+		event.setJoinMessage(null);
+		
+		if(!player.hasPlayedBefore()) {
+			Bukkit.broadcastMessage(Prefixes.PREFIX + "Welcome §6" + player.getName() + " §7to ScapeMC §c" + Bukkit.getServerName().toString());
 		}
 		
-		event.setJoinMessage("§7" + player.getName() + " has joined.");
-		
+		player.sendMessage(" ");
+		player.sendMessage(" ");
+		player.sendMessage(" ");
+		player.sendMessage("      §c§l§nWelcome to ScapeMC");
+		player.sendMessage(" ");
+		player.sendMessage("  §7Owned by §6Tamazaki §7and §6kmohawesome");
+		player.sendMessage("  §7Managed by §6DDrules");
+		player.sendMessage("  §7Network developed by §6Tamazaki");
+		player.sendMessage(" ");
+		player.sendMessage("  §3§lFORUMS §bscapemcn.enjin.com/forums");
+		player.sendMessage("  §2§lSHOP §ascapemcn.enjin.com/store");
+		player.sendMessage(" ");
+		player.sendMessage("  §7Connected to §c§nLobby #1");
+		player.sendMessage(" ");
 	}
 }

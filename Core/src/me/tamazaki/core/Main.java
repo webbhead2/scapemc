@@ -11,6 +11,7 @@ public class Main extends JavaPlugin {
 	public void onEnable() {
 		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 		getServer().getPluginManager().registerEvents(new PlayerChat(), this);
+		
 	}
 	
 	@Override
