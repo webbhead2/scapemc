@@ -34,5 +34,6 @@ public class PlayerListener implements Listener {
 		player.sendMessage(" ");
 		player.sendMessage("  §7Connected to §c§nLobby #1");
 		player.sendMessage(" ");
+		player.sendMessage(player.getUniqueId().toString().trim());
 	}
 }
