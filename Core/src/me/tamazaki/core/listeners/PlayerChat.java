@@ -19,6 +19,8 @@ public class PlayerChat implements Listener {
 			event.setFormat("§cAdmin §8┃ §7" + player.getName() + " §8> §f" + event.getMessage());
 		} else if(PermissionsEx.getUser(player).inGroup("Developer")) {
 			event.setFormat("§aDeveloper §8┃ §7" + player.getName() + " §8> §f" + event.getMessage());
+		}else if(PermissionsEx.getUser(player).inGroup("JDeveloper")) {
+			event.setFormat("§aJr. Developer §8┃ §7" + player.getName() + " §8> §f" + event.getMessage()); 
 		} else if(PermissionsEx.getUser(player).inGroup("Moderator")) {
 			event.setFormat("§6Moderator §8┃ §7" + player.getName() + " §8> §f" + event.getMessage());
 		} else if(PermissionsEx.getUser(player).inGroup("Helper")) {
