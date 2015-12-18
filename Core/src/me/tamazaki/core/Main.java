@@ -2,6 +2,7 @@ package me.tamazaki.core;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.tamazaki.core.cmds.ListCMD;
 import me.tamazaki.core.cmds.PingPlayerCMD;
 import me.tamazaki.core.listeners.LoginListener;
 import me.tamazaki.core.listeners.PlayerChat;
@@ -20,6 +21,7 @@ public class Main extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new PlayerChat(), this);
 		
 		getCommand("ping").setExecutor(new PingPlayerCMD());
+		getCommand("list").setExecutor(new ListCMD());
 		
 	}
 	

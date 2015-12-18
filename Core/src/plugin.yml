@@ -7,3 +7,5 @@ depend: [PermissionsEx]
 commands:
     ping:
       description: Pings a player
+    list:
+      description: Lists the number of players.
